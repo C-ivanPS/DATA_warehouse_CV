@@ -1,2 +1,2 @@
-# DATA_warehouse_CV
+# SQL_data_warehouse_CV
 Building a data warehouse with SQL Server, using ETL, data modeling and analytics.
