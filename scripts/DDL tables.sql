@@ -54,7 +54,7 @@ CREATE TABLE bronze.erp_loc_a101(
 IF OBJECT_ID ('bronze.erp_px_cat_g1v2','U') IS NOT NULL
 	DROP TABLE bronze.erp_px_cat_g1v2;
 CREATE TABLE bronze.erp_px_cat_g1v2(
-	ID INT,
+	ID NVARCHAR(50),
 	CAT NVARCHAR(50),
 	SUBCAT NVARCHAR(50),
 	MAINTENANCE NVARCHAR(50)
