@@ -1,4 +1,6 @@
-
+PRINT '>> TRUNCATING Table: silver.erp_loc_a101';
+TRUNCATE TABLE silver.erp_loc_a101;
+PRINT '>> INSERTING silver.erp_loc_a101';
 INSERT INTO silver.erp_loc_a101( cid, cntry)
 
 SELECT 
