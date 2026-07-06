@@ -1,3 +1,7 @@
+PRINT '>> TRUNCATING Table: silver.erp_px_cat_g1v2';
+TRUNCATE TABLE silver.erp_px_cat_g1v2;
+PRINT '>> INSERTING Table: silver.erp_px_cat_g1v2';
+
 INSERT INTO silver.erp_px_cat_g1v2(
 id,
 cat,
