@@ -1,3 +1,7 @@
+PRINT '>> TRUNCATING Table: silver.crm_customer_info';
+TRUNCATE TABLE silver.crm_customer_info;
+PRINT '>> INSERTING Table: silver.crm_customer_info';
+
 INSERT INTO silver.crm_customer_info(
   cst_id,
   cst_key,
