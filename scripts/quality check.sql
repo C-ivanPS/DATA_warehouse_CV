@@ -73,3 +73,21 @@ WHERE sls_sales != sls_quantity * sls_price
 		OR sls_sales IS NULL OR sls_quantity IS NULL OR sls_price IS NULL
 		OR sls_sales <= 0 OR sls_quantity <= 0 OR sls_price <= 0
 ORDER BY sls_sales, sls_quantity, sls_price
+
+
+-- Check and fix for discrepant JOINS between tables in Gender column
+SELECT DISTINCT
+
+ci.cst_gndr,
+ca.gen,
+CASE WHEN ci.cst_gndr != 'n/a' THEN ci.cst_gndr --CRM is th Master for gender Info
+	 ELSE COALESCE (ca.gen, 'n/a')
+END AS new_gen
+
+FROM silver.crm_cust_info ci
+LEFT JOIN silver.erp_cust_az12 ca
+ON		  ci.cst_key = ca.cid
+LEFT JOIN silver.erp_loc_a101 la
+ON		  ci.cst_key= la.cid
+
+ORDER BY 1,2
