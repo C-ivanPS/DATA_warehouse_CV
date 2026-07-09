@@ -1,4 +1,4 @@
-# SQL_data_warehouse_CV
+# SQL_data_warehouse
 Building a data warehouse with SQL Server, using ETL, data modeling and analytics.
 
 # Key Project Process: Data Refinement from CRM and ERP Systems
