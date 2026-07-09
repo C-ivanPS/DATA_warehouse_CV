@@ -8,6 +8,6 @@ At the initial stage, known as the bronze layer, all raw data is imported into a
 ## Silver Layer: Data Cleaning
 In the silver layer, the imported data undergoes cleaning. This step focuses on eliminating inconsistencies and errors to prepare the data for further processing. The objective is to ensure the data's accuracy and reliability before moving forward.
 ## Gold Layer: Data Integration and Labeling
-The final stage, referred to as the gold layer, involves joining and labeling the previously cleaned data. Here, disparate datasets are combined and organized, making the information accessible and user-friendly for end users.
+The final stage, referred to as the gold layer, involves joining and labeling the previously cleaned data. Here, datasets are combined and organized, making the information accessible and user-friendly for end users.
 ## Parameter-Driven Process
 Throughout each stage, the data refinement process is guided by parameters that have been defined in advance by the business owner or data master. These parameters ensure that the data meets specific business requirements and standards at every step.
